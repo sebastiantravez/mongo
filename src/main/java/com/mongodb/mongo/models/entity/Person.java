@@ -1,4 +1,4 @@
-package com.mongodb.mongo.models;
+package com.mongodb.mongo.models.entity;
 
 import lombok.Builder;
 import lombok.Data;

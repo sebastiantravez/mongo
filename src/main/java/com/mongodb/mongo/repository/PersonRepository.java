@@ -1,6 +1,6 @@
 package com.mongodb.mongo.repository;
 
-import com.mongodb.mongo.models.Person;
+import com.mongodb.mongo.models.entity.Person;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;

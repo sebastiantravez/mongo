@@ -1,6 +1,6 @@
 package com.mongodb.mongo.service.impl;
 
-import com.mongodb.mongo.models.Person;
+import com.mongodb.mongo.models.entity.Person;
 import com.mongodb.mongo.models.PersonDTO;
 import com.mongodb.mongo.repository.PersonRepository;
 import com.mongodb.mongo.service.PersonService;
