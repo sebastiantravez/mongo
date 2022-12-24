@@ -7,6 +7,9 @@ import com.mongodb.mongo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class PersonServiceImpl implements PersonService {
 
@@ -19,4 +22,14 @@ public class PersonServiceImpl implements PersonService {
         personRepository.save(person);
         return personDTO;
     }
+
+    @Override
+    public List<PersonDTO> getAllPersons() {
+        return personRepository.findAll().stream().map(data -> PersonDTO.builder()
+                .name(data.getName())
+                .lastName(data.getLastName())
+                .build())
+                .collect(Collectors.toList());
+    }
+
 }
