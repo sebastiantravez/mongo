@@ -1,4 +1,4 @@
-package com.mongodb.mongo.service.serviceimpl;
+package com.mongodb.mongo.service.impl;
 
 import com.mongodb.mongo.models.Person;
 import com.mongodb.mongo.models.PersonDTO;
